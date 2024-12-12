@@ -1,0 +1,29 @@
+{
+  "name": "nktool",
+  "version": "1.0.2",
+  "description": "NeoKit CLI",
+  "bin": {
+    "nktool": "./bin/nktool"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsup && ./scripts/postbuild.sh",
+    "nktool": "tsx ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "@neokit-dev/cli"
+  },
+  "author": "Leonard Lesinski",
+  "license": "MIT",
+  "devDependencies": {
+    "terser": "^5.37.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "temp-dir": "^3.0.0"
+  },
+  "type": "module"
+}
